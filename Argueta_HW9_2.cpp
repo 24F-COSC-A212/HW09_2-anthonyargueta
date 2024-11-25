@@ -12,7 +12,7 @@ int main()
 {
     ifstream inFile;
     char inName[200];
-    string inputLine = " ";
+    string inputLine = "";
     int lineNumber = 1;
 
     cout << "Enter the input file name: "; 
@@ -29,7 +29,7 @@ int main()
         getline(inFile, inputLine, '\n');
         cout << setw(4) << right << lineNumber 
         << ": " << inputLine << endl;
-        lineNumber ++;   
+        lineNumber++;   
     }
 
     inFile.close();
